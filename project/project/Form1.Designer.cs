@@ -48,6 +48,10 @@ namespace project
             this.setsizeBtn2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.fill_default = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.hypothesis = new System.Windows.Forms.TextBox();
+            this.nerd_on = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.In_Sets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Out_Sets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attributes)).BeginInit();
@@ -64,18 +68,19 @@ namespace project
             this.norrisbtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.norrisbtn.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold);
             this.norrisbtn.ForeColor = System.Drawing.Color.Aquamarine;
-            this.norrisbtn.Location = new System.Drawing.Point(9, 112);
+            this.norrisbtn.Location = new System.Drawing.Point(7, 201);
             this.norrisbtn.Name = "norrisbtn";
             this.norrisbtn.Size = new System.Drawing.Size(104, 49);
             this.norrisbtn.TabIndex = 35;
             this.norrisbtn.Text = "Norris it!";
             this.norrisbtn.UseVisualStyleBackColor = false;
+            this.norrisbtn.Visible = false;
             this.norrisbtn.Click += new System.EventHandler(this.norrisbtn_Click);
             // 
             // norrisout
             // 
             this.norrisout.AutoSize = true;
-            this.norrisout.Location = new System.Drawing.Point(116, 673);
+            this.norrisout.Location = new System.Drawing.Point(67, 171);
             this.norrisout.Name = "norrisout";
             this.norrisout.Size = new System.Drawing.Size(10, 13);
             this.norrisout.TabIndex = 36;
@@ -86,7 +91,7 @@ namespace project
             this.dsm_btn.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.dsm_btn.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold);
             this.dsm_btn.ForeColor = System.Drawing.Color.Aquamarine;
-            this.dsm_btn.Location = new System.Drawing.Point(9, 167);
+            this.dsm_btn.Location = new System.Drawing.Point(8, 118);
             this.dsm_btn.Name = "dsm_btn";
             this.dsm_btn.Size = new System.Drawing.Size(104, 44);
             this.dsm_btn.TabIndex = 39;
@@ -97,11 +102,12 @@ namespace project
             // hyp_out
             // 
             this.hyp_out.AutoSize = true;
-            this.hyp_out.Location = new System.Drawing.Point(116, 728);
+            this.hyp_out.Location = new System.Drawing.Point(21, 641);
             this.hyp_out.Name = "hyp_out";
-            this.hyp_out.Size = new System.Drawing.Size(10, 13);
+            this.hyp_out.Size = new System.Drawing.Size(74, 13);
             this.hyp_out.TabIndex = 40;
-            this.hyp_out.Text = "-";
+            this.hyp_out.Text = "hypothesises: ";
+            this.hyp_out.Visible = false;
             // 
             // In_Sets
             // 
@@ -114,10 +120,10 @@ namespace project
             this.In_Sets.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.In_Sets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.In_Sets.ColumnHeadersVisible = false;
-            this.In_Sets.Location = new System.Drawing.Point(207, 53);
+            this.In_Sets.Location = new System.Drawing.Point(211, 53);
             this.In_Sets.Name = "In_Sets";
             this.In_Sets.RowHeadersVisible = false;
-            this.In_Sets.Size = new System.Drawing.Size(988, 163);
+            this.In_Sets.Size = new System.Drawing.Size(984, 163);
             this.In_Sets.TabIndex = 0;
             // 
             // Out_Sets
@@ -128,7 +134,7 @@ namespace project
             this.Out_Sets.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Out_Sets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Out_Sets.ColumnHeadersVisible = false;
-            this.Out_Sets.Location = new System.Drawing.Point(211, 269);
+            this.Out_Sets.Location = new System.Drawing.Point(211, 260);
             this.Out_Sets.Name = "Out_Sets";
             this.Out_Sets.RowHeadersVisible = false;
             this.Out_Sets.Size = new System.Drawing.Size(984, 163);
@@ -150,7 +156,7 @@ namespace project
             // sizeCols_DSM
             // 
             this.sizeCols_DSM.HideSelection = false;
-            this.sizeCols_DSM.Location = new System.Drawing.Point(56, 17);
+            this.sizeCols_DSM.Location = new System.Drawing.Point(54, 17);
             this.sizeCols_DSM.Name = "sizeCols_DSM";
             this.sizeCols_DSM.Size = new System.Drawing.Size(57, 20);
             this.sizeCols_DSM.TabIndex = 27;
@@ -158,7 +164,7 @@ namespace project
             // sizeRows_DSM
             // 
             this.sizeRows_DSM.HideSelection = false;
-            this.sizeRows_DSM.Location = new System.Drawing.Point(56, 41);
+            this.sizeRows_DSM.Location = new System.Drawing.Point(54, 41);
             this.sizeRows_DSM.Name = "sizeRows_DSM";
             this.sizeRows_DSM.Size = new System.Drawing.Size(57, 20);
             this.sizeRows_DSM.TabIndex = 28;
@@ -171,10 +177,10 @@ namespace project
             this.attributes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.attributes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.attributes.ColumnHeadersVisible = false;
-            this.attributes.Location = new System.Drawing.Point(207, 15);
+            this.attributes.Location = new System.Drawing.Point(211, 15);
             this.attributes.Name = "attributes";
             this.attributes.RowHeadersVisible = false;
-            this.attributes.Size = new System.Drawing.Size(988, 36);
+            this.attributes.Size = new System.Drawing.Size(984, 36);
             this.attributes.TabIndex = 29;
             // 
             // objects
@@ -199,7 +205,7 @@ namespace project
             this.objects1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.objects1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.objects1.ColumnHeadersVisible = false;
-            this.objects1.Location = new System.Drawing.Point(211, 231);
+            this.objects1.Location = new System.Drawing.Point(211, 222);
             this.objects1.Name = "objects1";
             this.objects1.RowHeadersVisible = false;
             this.objects1.Size = new System.Drawing.Size(984, 36);
@@ -213,7 +219,7 @@ namespace project
             this.attributes1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.attributes1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.attributes1.ColumnHeadersVisible = false;
-            this.attributes1.Location = new System.Drawing.Point(119, 269);
+            this.attributes1.Location = new System.Drawing.Point(119, 260);
             this.attributes1.Name = "attributes1";
             this.attributes1.RowHeadersVisible = false;
             this.attributes1.Size = new System.Drawing.Size(86, 163);
@@ -227,7 +233,7 @@ namespace project
             this.tau.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.tau.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tau.ColumnHeadersVisible = false;
-            this.tau.Location = new System.Drawing.Point(211, 490);
+            this.tau.Location = new System.Drawing.Point(211, 469);
             this.tau.Name = "tau";
             this.tau.RowHeadersVisible = false;
             this.tau.Size = new System.Drawing.Size(984, 163);
@@ -241,7 +247,7 @@ namespace project
             this.attributes2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.attributes2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.attributes2.ColumnHeadersVisible = false;
-            this.attributes2.Location = new System.Drawing.Point(211, 452);
+            this.attributes2.Location = new System.Drawing.Point(211, 431);
             this.attributes2.Name = "attributes2";
             this.attributes2.RowHeadersVisible = false;
             this.attributes2.Size = new System.Drawing.Size(984, 36);
@@ -255,7 +261,7 @@ namespace project
             this.objects2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.objects2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.objects2.ColumnHeadersVisible = false;
-            this.objects2.Location = new System.Drawing.Point(119, 490);
+            this.objects2.Location = new System.Drawing.Point(119, 469);
             this.objects2.Name = "objects2";
             this.objects2.RowHeadersVisible = false;
             this.objects2.Size = new System.Drawing.Size(86, 163);
@@ -266,7 +272,7 @@ namespace project
             this.setsizeBtn1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.setsizeBtn1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.setsizeBtn1.ForeColor = System.Drawing.Color.Aquamarine;
-            this.setsizeBtn1.Location = new System.Drawing.Point(119, 231);
+            this.setsizeBtn1.Location = new System.Drawing.Point(119, 222);
             this.setsizeBtn1.Name = "setsizeBtn1";
             this.setsizeBtn1.Size = new System.Drawing.Size(86, 36);
             this.setsizeBtn1.TabIndex = 36;
@@ -279,7 +285,7 @@ namespace project
             this.setsizeBtn2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.setsizeBtn2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.setsizeBtn2.ForeColor = System.Drawing.Color.Aquamarine;
-            this.setsizeBtn2.Location = new System.Drawing.Point(119, 452);
+            this.setsizeBtn2.Location = new System.Drawing.Point(119, 431);
             this.setsizeBtn2.Name = "setsizeBtn2";
             this.setsizeBtn2.Size = new System.Drawing.Size(86, 36);
             this.setsizeBtn2.TabIndex = 37;
@@ -290,7 +296,7 @@ namespace project
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 20);
+            this.label1.Location = new System.Drawing.Point(13, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 41;
@@ -305,12 +311,61 @@ namespace project
             this.label2.TabIndex = 42;
             this.label2.Text = "height: ";
             // 
+            // fill_default
+            // 
+            this.fill_default.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.fill_default.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fill_default.ForeColor = System.Drawing.Color.Aquamarine;
+            this.fill_default.Location = new System.Drawing.Point(9, 67);
+            this.fill_default.Name = "fill_default";
+            this.fill_default.Size = new System.Drawing.Size(103, 45);
+            this.fill_default.TabIndex = 43;
+            this.fill_default.Text = "Fill with default data";
+            this.fill_default.UseVisualStyleBackColor = false;
+            this.fill_default.Click += new System.EventHandler(this.fill_default_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 171);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "iterations:";
+            // 
+            // hypothesis
+            // 
+            this.hypothesis.Location = new System.Drawing.Point(119, 638);
+            this.hypothesis.Multiline = true;
+            this.hypothesis.Name = "hypothesis";
+            this.hypothesis.Size = new System.Drawing.Size(1076, 79);
+            this.hypothesis.TabIndex = 45;
+            this.hypothesis.Visible = false;
+            // 
+            // nerd_on
+            // 
+            this.nerd_on.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.nerd_on.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nerd_on.ForeColor = System.Drawing.Color.Aquamarine;
+            this.nerd_on.Location = new System.Drawing.Point(7, 563);
+            this.nerd_on.Name = "nerd_on";
+            this.nerd_on.Size = new System.Drawing.Size(106, 68);
+            this.nerd_on.TabIndex = 46;
+            this.nerd_on.Text = "show info for nerds";
+            this.nerd_on.UseVisualStyleBackColor = false;
+            this.nerd_on.Click += new System.EventHandler(this.nerd_on_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1207, 750);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1207, 644);
+            this.Controls.Add(this.nerd_on);
+            this.Controls.Add(this.hypothesis);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.fill_default);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.setsizeBtn2);
@@ -369,6 +424,10 @@ namespace project
         private System.Windows.Forms.Button setsizeBtn2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button fill_default;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox hypothesis;
+        private System.Windows.Forms.Button nerd_on;
     }
 }
 

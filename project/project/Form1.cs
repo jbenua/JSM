@@ -199,8 +199,7 @@ namespace project
                 string str1 = NorrisToString(minus_hyp, minus);
                 str1 += "||||||";
                 str1 += str;
-                hyp_out.Text = str1;
-
+                hypothesis.Text = str1;
                 for (int j = 0; j < L.Count; j++)
                 {
                     bool ind_plus = check(L[j], plus_hyp);
@@ -246,5 +245,108 @@ namespace project
                     return true;
             return false;
         }
+
+        private void fill_default_Click(object sender, EventArgs e)
+        {
+            //Set sets sizes
+            sizeCols_DSM.Text = "18";
+            sizeRows_DSM.Text = "3";
+            setSizeBtn_DSM_Click(sender, e);
+            setsizeBtn1_Click(sender, e);
+            sizeRows_DSM.Text = "24";
+            setsizeBtn2_Click(sender, e);
+            //Fill in attributes
+            int i = 0;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "лук"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "копье"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "меч"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "арбалет"; i++;//3
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "шпага"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "мушкет"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "пистолет"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "ружье"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "винтовка"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "пулемет"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "револьвер"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "мотыга"; i++; //11
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "серп"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "соха"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "коса"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "плуг"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "косилка"; i++;
+            attributes[i, 0].Value = objects1[i, 0].Value = attributes2[i, 0].Value = "трактор"; i++;
+            //fill in plus-examples
+            objects[0, 0].Value = "лук, меч";
+            In_Sets[0, 0].Value = In_Sets[2, 0].Value = 1;
+            objects[0, 1].Value = "лук, копье";
+            In_Sets[0, 1].Value = In_Sets[1, 1].Value = 1;
+            objects[0, 2].Value = "меч, копье";
+            In_Sets[2, 2].Value = In_Sets[1, 2].Value = 1;
+            //fill in minus-examples
+            attributes1[0, 0].Value = "мотыга, серп";
+            Out_Sets[11, 0].Value = Out_Sets[12, 0].Value = 1;
+            attributes1[0, 1].Value = "серп,  соха";
+            Out_Sets[12, 1].Value = Out_Sets[13, 1].Value = 1;
+            attributes1[0, 2].Value = "соха, мотыга";
+            Out_Sets[13, 2].Value = Out_Sets[11, 2].Value = 1;
+            //fill in tau-examples
+            i=0;
+            objects2[0, i].Value = "лук, арбалет";
+            tau[0, i].Value = tau[3, i].Value = 1; i++;
+            objects2[0, i].Value = "меч, арбалет";
+            tau[2, i].Value = tau[3, i].Value = 1; i++;
+            objects2[0, i].Value = "арбалет, шпага";
+            tau[3, i].Value = tau[4, i].Value = 1; i++;
+            objects2[0, i].Value = "меч, шпага";
+            tau[2, i].Value = tau[4, i].Value = 1; i++;
+            objects2[0, i].Value = "шпага, мушкет";
+            tau[4, i].Value = tau[5, i].Value = 1; i++;
+            objects2[0, i].Value = "шпага, пистолет";
+            tau[4, i].Value = tau[6, i].Value = 1; i++;
+            objects2[0, i].Value = "арбалет, мушкет";
+            tau[3, i].Value = tau[5, i].Value = 1; i++;
+            objects2[0, i].Value = "арбалет, пистолет";
+            tau[3, i].Value = tau[6, i].Value = 1; i++;
+            objects2[0, i].Value = "мушкет, ружье";
+            tau[5, i].Value = tau[7, i].Value = 1; i++;
+            objects2[0, i].Value = "пистолет, ружье";
+            tau[6, i].Value = tau[7, i].Value = 1; i++;
+            objects2[0, i].Value = "ружье, винтовка";
+            tau[7, i].Value = tau[8, i].Value = 1; i++;
+            objects2[0, i].Value = "пистолет,  винтовка";
+            tau[6, i].Value = tau[8, i].Value = 1; i++;
+            objects2[0, i].Value = "винтовка,  пулемет";
+            tau[8, i].Value = tau[9, i].Value = 1; i++;
+            objects2[0, i].Value = "пистолет,  пулемет";
+            tau[6, i].Value = tau[9, i].Value = 1; i++;
+            objects2[0, i].Value = "пистолет, револьвер";
+            tau[6, i].Value = tau[10, i].Value = 1; i++;
+            objects2[0, i].Value = "винтовка, револьвер";
+            tau[8, i].Value = tau[10, i].Value = 1; i++;
+            objects2[0, i].Value = "серп,  коса";
+            tau[12, i].Value = tau[14, i].Value = 1; i++;
+            objects2[0, i].Value = "мотыга, коса";
+            tau[11, i].Value = tau[14, i].Value = 1; i++;
+            objects2[0, i].Value = "мотыга,  плуг";
+            tau[11, i].Value = tau[15, i].Value = 1; i++;
+            objects2[0, i].Value = "соха, плуг";
+            tau[13, i].Value = tau[15, i].Value = 1; i++;
+            objects2[0, i].Value = "коса,  косилка";
+            tau[14, i].Value = tau[16, i].Value = 1; i++;
+            objects2[0, i].Value = "плуг, косилка";
+            tau[15, i].Value = tau[16, i].Value = 1; i++;
+            objects2[0, i].Value = "плуг, трактор";
+            tau[15, i].Value = tau[17, i].Value = 1; i++;
+            objects2[0, i].Value = "косилка, трактор";
+            tau[16, i].Value = tau[17, i].Value = 1;
+        }
+
+        private void nerd_on_Click(object sender, EventArgs e)
+        {
+            hyp_out.Visible = true;
+            hypothesis.Visible = true;
+
+        }
+
     }
 }

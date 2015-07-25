@@ -1,0 +1,8 @@
+D:\Is-2012\c#\project\project\bin\Debug\project.exe
+D:\Is-2012\c#\project\project\bin\Debug\project.pdb
+D:\Is-2012\c#\project\project\obj\Debug\ResolveAssemblyReference.cache
+D:\Is-2012\c#\project\project\obj\Debug\project.Form1.resources
+D:\Is-2012\c#\project\project\obj\Debug\project.Properties.Resources.resources
+D:\Is-2012\c#\project\project\obj\Debug\project.csproj.GenerateResource.Cache
+D:\Is-2012\c#\project\project\obj\Debug\project.exe
+D:\Is-2012\c#\project\project\obj\Debug\project.pdb

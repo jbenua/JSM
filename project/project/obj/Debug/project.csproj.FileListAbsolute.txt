@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\project\project\obj\Debug\project.exe
+C:\Users\user\Desktop\project\project\obj\Debug\project.pdb
+C:\Users\user\Desktop\project\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\project\project\obj\Debug\project.Form1.resources
+C:\Users\user\Desktop\project\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\user\Desktop\project\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\project\project\bin\Debug\project.exe
+C:\Users\user\Desktop\project\project\bin\Debug\project.pdb
+C:\Users\user\Desktop\дсм\project\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\дсм\project\project\obj\Debug\project.Form1.resources
+C:\Users\user\Desktop\дсм\project\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\user\Desktop\дсм\project\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\дсм\project\project\bin\Debug\DSM.exe
+C:\Users\user\Desktop\дсм\project\project\bin\Debug\DSM.pdb
+C:\Users\user\Desktop\дсм\project\project\obj\Debug\DSM.exe
+C:\Users\user\Desktop\дсм\project\project\obj\Debug\DSM.pdb

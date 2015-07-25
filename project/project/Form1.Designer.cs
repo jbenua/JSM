@@ -62,20 +62,20 @@ namespace project
             // norrisbtn
             // 
             this.norrisbtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.norrisbtn.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.norrisbtn.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold);
             this.norrisbtn.ForeColor = System.Drawing.Color.Aquamarine;
-            this.norrisbtn.Location = new System.Drawing.Point(118, 669);
+            this.norrisbtn.Location = new System.Drawing.Point(9, 112);
             this.norrisbtn.Name = "norrisbtn";
-            this.norrisbtn.Size = new System.Drawing.Size(228, 49);
+            this.norrisbtn.Size = new System.Drawing.Size(104, 49);
             this.norrisbtn.TabIndex = 35;
-            this.norrisbtn.Text = "NORRIS IT!";
+            this.norrisbtn.Text = "Norris it!";
             this.norrisbtn.UseVisualStyleBackColor = false;
             this.norrisbtn.Click += new System.EventHandler(this.norrisbtn_Click);
             // 
             // norrisout
             // 
             this.norrisout.AutoSize = true;
-            this.norrisout.Location = new System.Drawing.Point(123, 726);
+            this.norrisout.Location = new System.Drawing.Point(116, 673);
             this.norrisout.Name = "norrisout";
             this.norrisout.Size = new System.Drawing.Size(10, 13);
             this.norrisout.TabIndex = 36;
@@ -84,11 +84,11 @@ namespace project
             // dsm_btn
             // 
             this.dsm_btn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dsm_btn.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dsm_btn.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Bold);
             this.dsm_btn.ForeColor = System.Drawing.Color.Aquamarine;
-            this.dsm_btn.Location = new System.Drawing.Point(569, 669);
+            this.dsm_btn.Location = new System.Drawing.Point(9, 167);
             this.dsm_btn.Name = "dsm_btn";
-            this.dsm_btn.Size = new System.Drawing.Size(169, 44);
+            this.dsm_btn.Size = new System.Drawing.Size(104, 44);
             this.dsm_btn.TabIndex = 39;
             this.dsm_btn.Text = "DSM IT!";
             this.dsm_btn.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@ namespace project
             // hyp_out
             // 
             this.hyp_out.AutoSize = true;
-            this.hyp_out.Location = new System.Drawing.Point(196, 726);
+            this.hyp_out.Location = new System.Drawing.Point(116, 728);
             this.hyp_out.Name = "hyp_out";
             this.hyp_out.Size = new System.Drawing.Size(10, 13);
             this.hyp_out.TabIndex = 40;
@@ -309,6 +309,7 @@ namespace project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1207, 750);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -331,7 +332,7 @@ namespace project
             this.Controls.Add(this.setSizeBtn_DSM);
             this.Controls.Add(this.sizeCols_DSM);
             this.Name = "Form1";
-            this.Text = "DSM Algorythm";
+            this.Text = "DSM Algorithm";
             ((System.ComponentModel.ISupportInitialize)(this.In_Sets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Out_Sets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.attributes)).EndInit();
